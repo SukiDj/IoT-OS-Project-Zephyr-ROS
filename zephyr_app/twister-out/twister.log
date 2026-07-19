@@ -1,0 +1,157 @@
+2026-07-19 16:51:02,317 - twister - INFO - Using Ninja..
+2026-07-19 16:51:05,686 - twister - INFO - Zephyr version: v4.3.0-8739-gc5857bbe6741
+2026-07-19 16:51:05,872 - twister - DEBUG - Running cmake script /workdir/zephyrproject/zephyr/cmake/verify-toolchain.cmake
+2026-07-19 16:51:05,873 - twister - DEBUG - Calling cmake: /usr/bin/cmake -DFORMAT=json -P /workdir/zephyrproject/zephyr/cmake/verify-toolchain.cmake
+2026-07-19 16:51:06,457 - twister - DEBUG - Finished running /workdir/zephyrproject/zephyr/cmake/verify-toolchain.cmake
+2026-07-19 16:51:06,458 - twister - INFO - Using 'zephyr/gnu' toolchain variant.
+2026-07-19 16:52:00,740 - twister - DEBUG - Reading testsuite configuration files under /workdir/zephyrproject/iot_app/tests...
+2026-07-19 16:52:00,743 - twister - DEBUG - Found possible testsuite in /workdir/zephyrproject/iot_app/tests
+2026-07-19 16:52:00,771 - twister - DEBUG - No duplicates found.
+2026-07-19 16:52:00,771 - twister - DEBUG -  platform filter: []
+2026-07-19 16:52:00,772 - twister - DEBUG - platform_pattern: []
+2026-07-19 16:52:00,772 - twister - DEBUG -    vendor filter: []
+2026-07-19 16:52:00,772 - twister - DEBUG -      arch_filter: None
+2026-07-19 16:52:00,772 - twister - DEBUG -       tag_filter: None
+2026-07-19 16:52:00,772 - twister - DEBUG -      exclude_tag: None
+2026-07-19 16:52:00,772 - twister - INFO - Selecting default platforms per testsuite scenario
+2026-07-19 16:52:00,783 - twister - INFO - Building initial testsuite list...
+2026-07-19 16:52:00,797 - twister - INFO - Built testsuite list in 0.01 seconds
+2026-07-19 16:52:00,798 - twister - INFO - Writing JSON report /workdir/zephyrproject/iot_app/twister-out/testplan.json
+2026-07-19 16:52:00,828 - twister - INFO - JOBS: 8
+2026-07-19 16:52:00,829 - twister - INFO - Adding tasks to the queue...
+2026-07-19 16:52:00,830 - twister - DEBUG - adding native_sim/native/host/gnu/iot_app.actuator_logic.ztest
+2026-07-19 16:52:00,835 - twister - INFO - Added initial list of jobs to queue
+2026-07-19 16:52:00,849 - twister - DEBUG - Running cmake on /workdir/zephyrproject/iot_app/tests for native_sim/native
+2026-07-19 16:52:00,849 - twister - DEBUG - Launched 8 jobs
+2026-07-19 16:52:00,850 - twister - DEBUG - Calling cmake: /usr/bin/cmake -B/workdir/zephyrproject/iot_app/twister-out/native_sim_native/host_gnu/iot_app/tests/iot_app.actuator_logic.ztest -DTC_RUNID=c9794d09a2fb21d5dd9cfffae8522f1d -DTC_NAME=iot_app.actuator_logic.ztest -DCONFIG_COMPILER_WARNINGS_AS_ERRORS=y -DEXTRA_GEN_EDT_ARGS=--edtlib-Werror -GNinja -DPython3_EXECUTABLE=/opt/python/venv/bin/python3 -DZEPHYR_TOOLCHAIN_VARIANT=host/gnu -S/workdir/zephyrproject/iot_app/tests -DBOARD=native_sim/native
+2026-07-19 16:55:40,896 - twister - DEBUG - Finished running cmake /workdir/zephyrproject/iot_app/tests for native_sim/native in 220.03 seconds
+2026-07-19 16:55:40,906 - twister - DEBUG - build test: native_sim/native/host/gnu/iot_app.actuator_logic.ztest
+2026-07-19 16:55:40,906 - twister - DEBUG - Building /workdir/zephyrproject/iot_app/tests for native_sim/native
+2026-07-19 16:55:40,907 - twister - DEBUG - Running /usr/bin/cmake --build /workdir/zephyrproject/iot_app/twister-out/native_sim_native/host_gnu/iot_app/tests/iot_app.actuator_logic.ztest
+2026-07-19 16:58:31,714 - twister - DEBUG - Finished building /workdir/zephyrproject/iot_app/tests for native_sim/native in 170.81 seconds
+2026-07-19 16:58:31,718 - twister - DEBUG - Determine test cases for test instance: native_sim/native/host/gnu/iot_app.actuator_logic.ztest
+2026-07-19 16:58:31,718 - twister - DEBUG - Determine test cases for test suite: iot_app.actuator_logic.ztest
+2026-07-19 16:58:32,266 - twister - DEBUG - Test instance native_sim/native/host/gnu/iot_app.actuator_logic.ztest already has 3 testcase(s) known: [<TestCase iot_app.actuator_logic.ztest.actuator_logic_tests.fan_on_at_exact_threshold with None>, <TestCase iot_app.actuator_logic.ztest.actuator_logic_tests.fan_on_above_threshold with None>, <TestCase iot_app.actuator_logic.ztest.actuator_logic_tests.fan_off_below_threshold with None>]
+2026-07-19 16:58:32,266 - twister - DEBUG - Detected 3 Ztest case(s): [iot_app.actuator_logic.ztest.actuator_logic_tests.fan_on_at_exact_threshold, iot_app.actuator_logic.ztest.actuator_logic_tests.fan_off_below_threshold, iot_app.actuator_logic.ztest.actuator_logic_tests.fan_on_above_threshold] in /workdir/zephyrproject/iot_app/twister-out/native_sim_native/host_gnu/iot_app/tests/iot_app.actuator_logic.ztest/zephyr/zephyr.elf
+2026-07-19 16:58:32,270 - twister - DEBUG - run test: native_sim/native/host/gnu/iot_app.actuator_logic.ztest
+2026-07-19 16:58:32,270 - twister - DEBUG - Reset instance status from 'passed' to None before run.
+2026-07-19 16:58:32,271 - twister - DEBUG - Spawning process: /workdir/zephyrproject/iot_app/twister-out/native_sim_native/host_gnu/iot_app/tests/iot_app.actuator_logic.ztest/zephyr/zephyr.exe
+in directory: /workdir/zephyrproject/iot_app/twister-out/native_sim_native/host_gnu/iot_app/tests/iot_app.actuator_logic.ztest
+2026-07-19 16:58:32,274 - twister - DEBUG - Spawning BinaryHandler Thread for native_sim/native/host/gnu/iot_app.actuator_logic.ztest
+2026-07-19 16:58:32,288 - twister - DEBUG - OUTPUT: *** Booting Zephyr OS build v4.3.0-8739-gc5857bbe6741 ***
+2026-07-19 16:58:32,289 - twister - DEBUG - OUTPUT: Running TESTSUITE actuator_logic_tests
+2026-07-19 16:58:32,290 - twister - DEBUG - OUTPUT: ===================================================================
+2026-07-19 16:58:32,291 - twister - DEBUG - OUTPUT: START - test_fan_off_below_threshold
+2026-07-19 16:58:32,291 - twister - DEBUG - OUTPUT:  PASS - test_fan_off_below_threshold in 0.000 seconds
+2026-07-19 16:58:32,292 - twister - DEBUG - OUTPUT: ===================================================================
+2026-07-19 16:58:32,293 - twister - DEBUG - OUTPUT: START - test_fan_on_above_threshold
+2026-07-19 16:58:32,294 - twister - DEBUG - OUTPUT:  PASS - test_fan_on_above_threshold in 0.000 seconds
+2026-07-19 16:58:32,295 - twister - DEBUG - OUTPUT: ===================================================================
+2026-07-19 16:58:32,295 - twister - DEBUG - OUTPUT: START - test_fan_on_at_exact_threshold
+2026-07-19 16:58:32,296 - twister - DEBUG - OUTPUT:  PASS - test_fan_on_at_exact_threshold in 0.000 seconds
+2026-07-19 16:58:32,296 - twister - DEBUG - OUTPUT: ===================================================================
+2026-07-19 16:58:32,297 - twister - DEBUG - OUTPUT: TESTSUITE actuator_logic_tests succeeded
+2026-07-19 16:58:32,297 - twister - DEBUG - OUTPUT: 
+2026-07-19 16:58:32,298 - twister - DEBUG - OUTPUT: ------ TESTSUITE SUMMARY START ------
+2026-07-19 16:58:32,299 - twister - DEBUG - OUTPUT: 
+2026-07-19 16:58:32,299 - twister - DEBUG - OUTPUT: SUITE PASS - 100.00% [actuator_logic_tests]: pass = 3, fail = 0, skip = 0, total = 3 duration = 0.000 seconds
+2026-07-19 16:58:32,300 - twister - DEBUG - OUTPUT:  - PASS - [actuator_logic_tests.test_fan_off_below_threshold] duration = 0.000 seconds
+2026-07-19 16:58:32,300 - twister - DEBUG - OUTPUT:  - PASS - [actuator_logic_tests.test_fan_on_above_threshold] duration = 0.000 seconds
+2026-07-19 16:58:32,301 - twister - DEBUG - OUTPUT:  - PASS - [actuator_logic_tests.test_fan_on_at_exact_threshold] duration = 0.000 seconds
+2026-07-19 16:58:32,301 - twister - DEBUG - OUTPUT: 
+2026-07-19 16:58:32,302 - twister - DEBUG - OUTPUT: ------ TESTSUITE SUMMARY END ------
+2026-07-19 16:58:32,302 - twister - DEBUG - OUTPUT: 
+2026-07-19 16:58:32,303 - twister - DEBUG - OUTPUT: ===================================================================
+2026-07-19 16:58:32,303 - twister - DEBUG - OUTPUT: RunID: c9794d09a2fb21d5dd9cfffae8522f1d
+2026-07-19 16:58:32,304 - twister - DEBUG - OUTPUT: PROJECT EXECUTION SUCCESSFUL
+2026-07-19 16:58:32,307 - twister - DEBUG - Expected suite names:['actuator_logic_tests']
+2026-07-19 16:58:32,308 - twister - DEBUG - Detected suite names:['actuator_logic_tests']
+2026-07-19 16:58:32,308 - twister - DEBUG - run status: native_sim/native/host/gnu/iot_app.actuator_logic.ztest passed
+2026-07-19 16:58:32,311 - twister - INFO - 1/1 native_sim/native         iot_app.actuator_logic.ztest                       [32mPASSED[39m (native 0.035s <host/gnu>)
+2026-07-19 16:58:32,318 - twister - INFO - 1 test scenarios (1 configurations) selected, 0 configurations filtered (0 by static filter, 0 at runtime).
+2026-07-19 16:58:32,324 - twister - INFO - [32m1 of 1[39m executed test configurations passed (100.00%), 0 built (not run), 0 failed, 0 errored, with no warnings in 450.01 seconds.
+2026-07-19 16:58:32,324 - twister - INFO - 3 of 3 executed test cases passed (100.00%) on 1 out of total 1436 platforms (0.07%).
+2026-07-19 16:58:32,325 - twister - INFO - [32m1[39m test configurations executed on platforms, [36m0[39m test configurations were only built.
+2026-07-19 16:58:32,325 - twister - INFO - Saving reports...
+2026-07-19 16:58:32,326 - twister - INFO - Writing JSON report /workdir/zephyrproject/iot_app/twister-out/twister.json
+2026-07-19 16:58:32,328 - twister - INFO - Writing xunit report /workdir/zephyrproject/iot_app/twister-out/twister.xml...
+2026-07-19 16:58:32,343 - twister - INFO - Writing xunit report /workdir/zephyrproject/iot_app/twister-out/twister_report.xml...
+2026-07-19 16:58:32,354 - twister - INFO - Run completed
+2026-07-19 17:56:14,534 - twister - INFO - Using Ninja..
+2026-07-19 17:56:17,315 - twister - INFO - Zephyr version: v4.3.0-8739-gc5857bbe6741
+2026-07-19 17:56:17,457 - twister - DEBUG - Running cmake script /workdir/zephyrproject/zephyr/cmake/verify-toolchain.cmake
+2026-07-19 17:56:17,458 - twister - DEBUG - Calling cmake: /usr/bin/cmake -DFORMAT=json -P /workdir/zephyrproject/zephyr/cmake/verify-toolchain.cmake
+2026-07-19 17:56:18,216 - twister - DEBUG - Finished running /workdir/zephyrproject/zephyr/cmake/verify-toolchain.cmake
+2026-07-19 17:56:18,216 - twister - INFO - Using 'zephyr/gnu' toolchain variant.
+2026-07-19 17:56:53,519 - twister - DEBUG - Reading testsuite configuration files under /workdir/zephyrproject/iot_app/tests...
+2026-07-19 17:56:53,521 - twister - DEBUG - Found possible testsuite in /workdir/zephyrproject/iot_app/tests
+2026-07-19 17:56:53,550 - twister - DEBUG - No duplicates found.
+2026-07-19 17:56:53,551 - twister - DEBUG -  platform filter: []
+2026-07-19 17:56:53,551 - twister - DEBUG - platform_pattern: []
+2026-07-19 17:56:53,551 - twister - DEBUG -    vendor filter: []
+2026-07-19 17:56:53,551 - twister - DEBUG -      arch_filter: None
+2026-07-19 17:56:53,551 - twister - DEBUG -       tag_filter: None
+2026-07-19 17:56:53,551 - twister - DEBUG -      exclude_tag: None
+2026-07-19 17:56:53,552 - twister - INFO - Selecting default platforms per testsuite scenario
+2026-07-19 17:56:53,556 - twister - INFO - Building initial testsuite list...
+2026-07-19 17:56:53,563 - twister - INFO - Built testsuite list in 0.01 seconds
+2026-07-19 17:56:53,584 - twister - INFO - JOBS: 8
+2026-07-19 17:56:53,585 - twister - INFO - Adding tasks to the queue...
+2026-07-19 17:56:53,585 - twister - DEBUG - adding native_sim/native/host/gnu/iot_app.actuator_logic.ztest
+2026-07-19 17:56:53,591 - twister - INFO - Added initial list of jobs to queue
+2026-07-19 17:56:53,605 - twister - DEBUG - Launched 8 jobs
+2026-07-19 17:56:53,609 - twister - DEBUG - Running cmake on /workdir/zephyrproject/iot_app/tests for native_sim/native
+2026-07-19 17:56:53,610 - twister - DEBUG - Calling cmake: /usr/bin/cmake -B/workdir/zephyrproject/iot_app/twister-out/native_sim_native/host_gnu/iot_app/tests/iot_app.actuator_logic.ztest -DTC_RUNID=c9794d09a2fb21d5dd9cfffae8522f1d -DTC_NAME=iot_app.actuator_logic.ztest -DCONFIG_COMPILER_WARNINGS_AS_ERRORS=y -DEXTRA_GEN_EDT_ARGS=--edtlib-Werror -GNinja -DPython3_EXECUTABLE=/opt/python/venv/bin/python3 -DZEPHYR_TOOLCHAIN_VARIANT=host/gnu -S/workdir/zephyrproject/iot_app/tests -DBOARD=native_sim/native
+2026-07-19 17:59:01,468 - twister - DEBUG - Finished running cmake /workdir/zephyrproject/iot_app/tests for native_sim/native in 127.84 seconds
+2026-07-19 17:59:01,479 - twister - DEBUG - build test: native_sim/native/host/gnu/iot_app.actuator_logic.ztest
+2026-07-19 17:59:01,480 - twister - DEBUG - Building /workdir/zephyrproject/iot_app/tests for native_sim/native
+2026-07-19 17:59:01,481 - twister - DEBUG - Running /usr/bin/cmake --build /workdir/zephyrproject/iot_app/twister-out/native_sim_native/host_gnu/iot_app/tests/iot_app.actuator_logic.ztest
+2026-07-19 17:59:38,130 - twister - DEBUG - Finished building /workdir/zephyrproject/iot_app/tests for native_sim/native in 36.65 seconds
+2026-07-19 17:59:38,134 - twister - DEBUG - Determine test cases for test instance: native_sim/native/host/gnu/iot_app.actuator_logic.ztest
+2026-07-19 17:59:38,135 - twister - DEBUG - Determine test cases for test suite: iot_app.actuator_logic.ztest
+2026-07-19 17:59:38,675 - twister - DEBUG - Test instance native_sim/native/host/gnu/iot_app.actuator_logic.ztest already has 3 testcase(s) known: [<TestCase iot_app.actuator_logic.ztest.actuator_logic_tests.fan_off_below_threshold with None>, <TestCase iot_app.actuator_logic.ztest.actuator_logic_tests.fan_on_above_threshold with None>, <TestCase iot_app.actuator_logic.ztest.actuator_logic_tests.fan_on_at_exact_threshold with None>]
+2026-07-19 17:59:38,675 - twister - DEBUG - Detected 3 Ztest case(s): [iot_app.actuator_logic.ztest.actuator_logic_tests.fan_on_at_exact_threshold, iot_app.actuator_logic.ztest.actuator_logic_tests.fan_off_below_threshold, iot_app.actuator_logic.ztest.actuator_logic_tests.fan_on_above_threshold] in /workdir/zephyrproject/iot_app/twister-out/native_sim_native/host_gnu/iot_app/tests/iot_app.actuator_logic.ztest/zephyr/zephyr.elf
+2026-07-19 17:59:38,678 - twister - DEBUG - run test: native_sim/native/host/gnu/iot_app.actuator_logic.ztest
+2026-07-19 17:59:38,679 - twister - DEBUG - Reset instance status from 'passed' to None before run.
+2026-07-19 17:59:38,679 - twister - DEBUG - Spawning process: /workdir/zephyrproject/iot_app/twister-out/native_sim_native/host_gnu/iot_app/tests/iot_app.actuator_logic.ztest/zephyr/zephyr.exe
+in directory: /workdir/zephyrproject/iot_app/twister-out/native_sim_native/host_gnu/iot_app/tests/iot_app.actuator_logic.ztest
+2026-07-19 17:59:38,683 - twister - DEBUG - Spawning BinaryHandler Thread for native_sim/native/host/gnu/iot_app.actuator_logic.ztest
+2026-07-19 17:59:38,689 - twister - DEBUG - OUTPUT: *** Booting Zephyr OS build v4.3.0-8739-gc5857bbe6741 ***
+2026-07-19 17:59:38,690 - twister - DEBUG - OUTPUT: Running TESTSUITE actuator_logic_tests
+2026-07-19 17:59:38,690 - twister - DEBUG - OUTPUT: ===================================================================
+2026-07-19 17:59:38,691 - twister - DEBUG - OUTPUT: START - test_fan_off_below_threshold
+2026-07-19 17:59:38,692 - twister - DEBUG - OUTPUT:  PASS - test_fan_off_below_threshold in 0.000 seconds
+2026-07-19 17:59:38,692 - twister - DEBUG - OUTPUT: ===================================================================
+2026-07-19 17:59:38,693 - twister - DEBUG - OUTPUT: START - test_fan_on_above_threshold
+2026-07-19 17:59:38,693 - twister - DEBUG - OUTPUT:  PASS - test_fan_on_above_threshold in 0.000 seconds
+2026-07-19 17:59:38,694 - twister - DEBUG - OUTPUT: ===================================================================
+2026-07-19 17:59:38,694 - twister - DEBUG - OUTPUT: START - test_fan_on_at_exact_threshold
+2026-07-19 17:59:38,695 - twister - DEBUG - OUTPUT:  PASS - test_fan_on_at_exact_threshold in 0.000 seconds
+2026-07-19 17:59:38,695 - twister - DEBUG - OUTPUT: ===================================================================
+2026-07-19 17:59:38,696 - twister - DEBUG - OUTPUT: TESTSUITE actuator_logic_tests succeeded
+2026-07-19 17:59:38,696 - twister - DEBUG - OUTPUT: 
+2026-07-19 17:59:38,697 - twister - DEBUG - OUTPUT: ------ TESTSUITE SUMMARY START ------
+2026-07-19 17:59:38,697 - twister - DEBUG - OUTPUT: 
+2026-07-19 17:59:38,698 - twister - DEBUG - OUTPUT: SUITE PASS - 100.00% [actuator_logic_tests]: pass = 3, fail = 0, skip = 0, total = 3 duration = 0.000 seconds
+2026-07-19 17:59:38,698 - twister - DEBUG - OUTPUT:  - PASS - [actuator_logic_tests.test_fan_off_below_threshold] duration = 0.000 seconds
+2026-07-19 17:59:38,699 - twister - DEBUG - OUTPUT:  - PASS - [actuator_logic_tests.test_fan_on_above_threshold] duration = 0.000 seconds
+2026-07-19 17:59:38,699 - twister - DEBUG - OUTPUT:  - PASS - [actuator_logic_tests.test_fan_on_at_exact_threshold] duration = 0.000 seconds
+2026-07-19 17:59:38,700 - twister - DEBUG - OUTPUT: 
+2026-07-19 17:59:38,700 - twister - DEBUG - OUTPUT: ------ TESTSUITE SUMMARY END ------
+2026-07-19 17:59:38,701 - twister - DEBUG - OUTPUT: 
+2026-07-19 17:59:38,701 - twister - DEBUG - OUTPUT: ===================================================================
+2026-07-19 17:59:38,702 - twister - DEBUG - OUTPUT: RunID: c9794d09a2fb21d5dd9cfffae8522f1d
+2026-07-19 17:59:38,702 - twister - DEBUG - OUTPUT: PROJECT EXECUTION SUCCESSFUL
+2026-07-19 17:59:38,706 - twister - DEBUG - Expected suite names:['actuator_logic_tests']
+2026-07-19 17:59:38,706 - twister - DEBUG - Detected suite names:['actuator_logic_tests']
+2026-07-19 17:59:38,706 - twister - DEBUG - run status: native_sim/native/host/gnu/iot_app.actuator_logic.ztest passed
+2026-07-19 17:59:38,709 - twister - INFO - 1/1 native_sim/native         iot_app.actuator_logic.ztest                       [32mPASSED[39m (native 0.025s <host/gnu>)
+2026-07-19 17:59:38,716 - twister - INFO - 1 test scenarios (1 configurations) selected, 0 configurations filtered (0 by static filter, 0 at runtime).
+2026-07-19 17:59:38,723 - twister - INFO - [32m1 of 1[39m executed test configurations passed (100.00%), 0 built (not run), 0 failed, 0 errored, with no warnings in 204.19 seconds.
+2026-07-19 17:59:38,723 - twister - INFO - 3 of 3 executed test cases passed (100.00%) on 1 out of total 1436 platforms (0.07%).
+2026-07-19 17:59:38,724 - twister - INFO - [32m1[39m test configurations executed on platforms, [36m0[39m test configurations were only built.
+2026-07-19 17:59:38,724 - twister - INFO - Saving reports...
+2026-07-19 17:59:38,724 - twister - INFO - Writing JSON report /workdir/zephyrproject/iot_app/twister-out/twister.json
+2026-07-19 17:59:38,727 - twister - INFO - Writing xunit report /workdir/zephyrproject/iot_app/twister-out/twister.xml...
+2026-07-19 17:59:38,740 - twister - INFO - Writing xunit report /workdir/zephyrproject/iot_app/twister-out/twister_report.xml...
+2026-07-19 17:59:38,747 - twister - INFO - Run completed

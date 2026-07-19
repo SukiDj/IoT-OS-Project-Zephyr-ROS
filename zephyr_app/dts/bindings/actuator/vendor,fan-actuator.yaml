@@ -1,0 +1,9 @@
+description: Simple fan actuator controlled via a single GPIO (LED)
+
+compatible: "vendor,fan-actuator"
+
+properties:
+  gpios:
+    type: phandle-array
+    required: true
+    description: GPIO pin connected to the fan/LED

@@ -1,0 +1,11 @@
+manifest:
+  version: 1.2
+
+  self:
+    path: iot_app
+
+  projects:
+    - name: zephyr
+      revision: v4.3.0
+      url: https://github.com/zephyrproject-rtos/zephyr
+      path: ../zephyr

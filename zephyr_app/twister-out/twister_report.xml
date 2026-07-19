@@ -1,0 +1,10 @@
+<testsuites>
+	<testsuite name="native_sim/native" timestamp="2026-07-19T17:56:53.564054" time="0.02" tests="3" failures="0" errors="0" skipped="0">
+		<properties>
+			<property name="version" value="v4.3.0-8739-gc5857bbe6741" />
+		</properties>
+		<testcase classname="iot_app.actuator_logic.ztest" name="iot_app.actuator_logic.ztest.actuator_logic_tests.fan_on_at_exact_threshold" time="0.00" />
+		<testcase classname="iot_app.actuator_logic.ztest" name="iot_app.actuator_logic.ztest.actuator_logic_tests.fan_off_below_threshold" time="0.00" />
+		<testcase classname="iot_app.actuator_logic.ztest" name="iot_app.actuator_logic.ztest.actuator_logic_tests.fan_on_above_threshold" time="0.00" />
+	</testsuite>
+</testsuites>

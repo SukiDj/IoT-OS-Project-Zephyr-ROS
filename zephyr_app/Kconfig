@@ -1,0 +1,13 @@
+mainmenu "IoT Demo Application Configuration"
+
+config IOT_TEMP_THRESHOLD_C
+	int "Prag temperature za aktivaciju ventilatora (C)"
+	default 30
+	help
+	  Kada ocitana temperatura pređe ovu vrednost, aktuator (LED/ventilator)
+	  se aktivira. Ova vrednost se koristi kao inicijalna vrednost pri
+	  pokretanju; moze se naknadno promeniti u runtime preko shell komande
+	  'iot set_threshold'.
+
+source "$(APPLICATION_SOURCE_DIR)/src/Kconfig"
+source "Kconfig.zephyr"

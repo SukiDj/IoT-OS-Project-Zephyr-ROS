@@ -1,0 +1,27 @@
+/ {
+    zephyr,user {
+        io-channels = <&adc0 0>;
+    };
+    
+    fan0: fan_actuator {
+        compatible = "vendor,fan-actuator";
+        status = "okay";
+        gpios = <&gpio0 0 GPIO_ACTIVE_HIGH>;
+    };
+};
+
+&adc0 {
+    #address-cells = <1>;
+    #size-cells = <0>;
+    nchannels = <1>;
+    ref-external0-mv = <3300>;
+
+    channel@0 {
+        reg = <0>;
+        zephyr,gain = "ADC_GAIN_1";
+        zephyr,reference = "ADC_REF_EXTERNAL0";
+        zephyr,vref-mv = <3300>;
+        zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+        zephyr,resolution = <12>;
+    };
+};
